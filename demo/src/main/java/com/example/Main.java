@@ -9,6 +9,6 @@ public class Main {
         Mercadona m=new Mercadona();
 
         System.out.println(a.busqueda("patatas").get(0));
-        //System.out.println(m.busqueda("cebolla").get(0));
+        System.out.println(m.busqueda("cebolla").get(0));
     }
 }

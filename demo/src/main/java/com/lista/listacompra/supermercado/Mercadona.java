@@ -26,6 +26,7 @@ public class Mercadona extends Supermercado {
             OkHttpClient cliente = new OkHttpClient();
             URL url = new URL(MERCADONA_API_URL);
             HttpsURLConnection conexion = (HttpsURLConnection) url.openConnection();
+            conexion.setDoOutput(true);
             String json = "{\"params\":\"query=" + producto + "&hitsPerPage=10\"}";
             conexion.setRequestMethod("POST");
             conexion.setRequestProperty("Content-Type", "application/json");
